@@ -18,7 +18,7 @@ def eda(df: pd.DataFrame):
     print('Null Values:', df.isnull().sum())
 
 ### Function for handling null values in a dataframe ###
-def null(df:pd.DataFrame):
+def remove_null(df:pd.DataFrame):
 
     """
     Removes the null values from a specified dataframe
@@ -29,7 +29,8 @@ def null(df:pd.DataFrame):
     Returns:
         Drops the null values and prints a summation of the null values in a dataframe (which should be 0).
     """
-    df = df.dropna()
-    print('Nulls are gone!', df.isnull().sum())
+    df.dropna(inplace=True)
+    print('Nulls are gone!', 
+          df.isnull().sum())
 
 
