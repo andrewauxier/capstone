@@ -1,0 +1,5 @@
+Fatalities by Vehicle Type
+Required Libraries
+- Pandas (pandas as pd)
+- Matplotlib (matplotlib.pyplot as plt)
+- SQLite3 
